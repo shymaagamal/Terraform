@@ -4,7 +4,7 @@ resource "aws_subnet" "publicsubnet" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "Main"
+    Name = "publicsubnet"
   }
 }
 
@@ -15,7 +15,7 @@ resource "aws_subnet" "publicsubnet2" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "Main"
+    Name = "publicsubnet2"
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_subnet" "privateSubnet1" {
   cidr_block = "10.0.2.0/24"
 
   tags = {
-    Name = "Main"
+    Name = "privateSubnet1"
   }
 }
 
@@ -33,6 +33,6 @@ resource "aws_subnet" "privateSubnet2" {
   cidr_block = "10.0.4.0/24"
 
   tags = {
-    Name = "Main"
+    Name = "privateSubnet2"
   }
 }
